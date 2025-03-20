@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import skew
 
 # Load dataset
-file_path = "/mnt/data/data.csv"
+file_path = "data.csv"
 df = pd.read_csv(file_path)
 
 # Convert 'Minute' to numeric (handle extra characters like '90+5')
@@ -51,7 +51,7 @@ print(f"Distribution Type: {distribution}")
 
 # Plot Histogram
 plt.hist(df['Minute'].dropna(), bins=10, edgecolor='black')
-plt.title('Histogram of Event Minutes')
+plt.title('Jumlah Pembagian Gol Karir Ronaldo')
 plt.xlabel('Minute')
 plt.ylabel('Frequency')
 plt.show()
